@@ -1,0 +1,38 @@
+.text-icon {
+	position: relative;
+	margin-bottom: 50px;
+	&__icon {
+		position: absolute;
+		top: 0;
+		width: 100px;
+		text-align: center;
+		.icon {
+			font-size: 64px;
+			color: @custom-color;
+			.transition (color 0.3s ease);
+		}
+	}
+	&__info {
+		padding: 0 0 0 100px;
+		margin-bottom: 30px;
+	}
+	&__title {
+		margin-bottom: 25px;
+		font-family: @logo-font;
+		font-size: 1.375em;
+		font-weight: 700;
+		color: @body-font-color;
+		.transition (color 0.3s ease);
+	}
+}
+.text-icon.last {
+	margin-bottom: 0;
+}
+.text-icon:hover {
+	.text-icon__icon .icon {
+		color: #212121;
+	}
+	.text-icon__title {
+		color: @custom-color;
+	}
+}

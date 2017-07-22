@@ -1,0 +1,55 @@
+// Slick Slider
+
+.slick-dots li button:before
+{
+    opacity: 1;
+    color: #000000;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: 1;
+    color: @custom-color;
+}
+
+.nav-mobile {
+	.slick-prev,
+	.slick-next
+	{
+		top: 50% !important;
+		width: 22px !important;
+		height: 50px !important;
+		margin-top: -25px !important;
+		background: rgba(0,0,0,0.1);
+	}
+	.slick-next {
+		right: 0 !important;
+	}
+	.slick-prev {
+		left: 0 !important;
+	}
+}
+
+// Revolution Slider
+
+#slider .tp-leftarrow.default, #slider .tp-rightarrow.default {	
+	background-image: url(../images/slider-arrow-prev.png);	
+	width:95px;	
+	height:118px;
+	position: relative;
+	&:after {
+		display: none;
+	}
+	&:hover {
+		opacity: 0.5;
+	}
+}
+#slider .tp-rightarrow.default {	
+	background-image: url(../images/slider-arrow-next.png);	
+}
+@media (max-width: @screen-xs-max) {
+	#slider .tp-leftarrow.default, #slider .tp-rightarrow.default {	
+		background-size: 100% 100%;
+		width:45px;	
+		height:50px;
+	}
+}

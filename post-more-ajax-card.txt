@@ -1,0 +1,59 @@
+						<div class="blog-post">
+							<div class="post-image">
+								<a href="blog-single.html"><img src="images/blog/blog-post-img-5.jpg" alt=""></a>
+							</div>
+							<div class="post-content">
+								<div class="post-author">Richard M. Pinckney</div>
+								<h3 class="post-title"><a href="#">Getting Ready for Spring: Slit Seeding Your Yard</a></h3>
+								<div class="post-date"><span class="day">10</span><span class="month">April</span></div>
+								<div class="post-meta"><i class="icon icon-speech"></i><span>3</span></div>
+							</div>
+						</div>
+            
+            <div class="blog-post">
+							<div class="post-image">
+								<a href="blog-single.html"><img src="images/blog/blog-post-img-1.jpg" alt=""></a>
+							</div>
+							<div class="post-content">
+								<div class="post-author">Richard M. Pinckney</div>
+								<h3 class="post-title"><a href="#">Getting Ready for Spring: Slit Seeding Your Yard</a></h3>
+								<div class="post-date"><span class="day">10</span><span class="month">April</span></div>
+								<div class="post-meta"><i class="icon icon-speech"></i><span>3</span></div>
+							</div>
+						</div>       
+            
+            <div class="blog-post doubleW">
+							<div class="post-image">
+								<a href="blog-single.html"><img src="images/blog/blog-post-img-2-2.jpg" alt=""></a>
+							</div>
+							<div class="post-content">
+								<div class="post-author">Richard M. Pinckney</div>
+								<h3 class="post-title"><a href="#">Getting Ready for Spring: Slit Seeding Your Yard</a></h3>
+								<div class="post-date"><span class="day">10</span><span class="month">April</span></div>
+								<div class="post-meta"><i class="icon icon-speech"></i><span>3</span></div>
+							</div>
+						</div>						
+            
+            <div class="blog-post">
+							<div class="post-image">
+								<a href="blog-single.html"><img src="images/blog/blog-post-img-2-1.jpg" alt=""></a>
+							</div>
+							<div class="post-content">
+								<div class="post-author">Richard M. Pinckney</div>
+								<h3 class="post-title"><a href="#">Getting Ready for Spring: Slit Seeding Your Yard</a></h3>
+								<div class="post-date"><span class="day">10</span><span class="month">April</span></div>
+								<div class="post-meta"><i class="icon icon-speech"></i><span>3</span></div>
+							</div>
+						</div>
+            
+            <div class="blog-post">
+							<div class="post-image">
+								<a href="blog-single.html"><img src="images/blog/blog-post-img-3.jpg" alt=""></a>
+							</div>
+							<div class="post-content">
+								<div class="post-author">Richard M. Pinckney</div>
+								<h3 class="post-title"><a href="#">Getting Ready for Spring: Slit Seeding Your Yard</a></h3>
+								<div class="post-date"><span class="day">10</span><span class="month">April</span></div>
+								<div class="post-meta"><i class="icon icon-speech"></i><span>3</span></div>
+							</div>
+						</div>       

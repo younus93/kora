@@ -1,0 +1,28 @@
+.social-links {
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+		  display: inline-block;
+		  margin-right: 8px;
+		  list-style: none;
+		  text-align: center;
+		  a {
+			font-size: 43px;
+			color: @custom-color;
+			text-decoration: none;
+			  cursor: pointer;
+			  &:hover {
+				  color: @custom-color-alt
+			  }
+			.transition (color, 300ms);
+		  }
+		}
+	}
+}
+.social-links.lg ul li {
+	margin: 0 0 10px 10px;
+	a {
+	  font-size: 50px;
+	}
+}

@@ -1,0 +1,95 @@
+.iconcircle-wrap {
+	overflow: hidden;
+	width:  100%;
+	text-align: center;
+	@media (max-width: @screen-xs-max) {
+		overflow: visible;
+	}
+}
+.iconcircle {
+	position: relative;
+	width: 20%;
+	@media (max-width: @screen-sm-max) {
+		width: 33.333%;
+		margin-bottom: 10px;
+	}
+	margin-bottom: 0;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 -4px 0 0;
+	text-align: center;
+	&__icon {
+		text-align: center;
+		margin-bottom: 22px;
+		span {
+			display: block;
+			position: relative;
+			overflow: hidden;
+			margin: 0 auto;
+			z-index: 1;
+			width: 180px;
+			height: 180px;
+			@media (max-width: @screen-md-max) {
+				width: 150px;
+				height: 150px;				
+			}
+			@media (max-width: @screen-sm-max) {
+				width: 150px;
+				height: 150px;				
+			}
+			border-radius: 50%;
+			line-height: 175px;
+			font-size: 65px;
+			background-color: @custom-color;
+			color: #ffffff;
+			.transition (all 0.3s ease);
+			.icon {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: -32px 0 0 -40px;
+				width: 80px;
+				text-align: center;
+			}
+		}
+	}
+	&__title {
+		padding: 0 15px;
+		font-size: 1.125em;
+		line-height: 1.444em;
+		font-weight: 500;
+		color: #ffffff;
+	}
+//	&:hover {
+//		.iconcircle__icon span {
+//			 background-color: #ffffff;
+//			 color: @custom-color;
+//		}
+//	}
+}
+
+.iconcircle.hovered .iconcircle__icon .icon {
+	left: 50%;
+	-webkit-animation: iconmove-left 0.5s 1; 
+	-moz-animation:    iconmove-left 0.5s 1;
+	animation:         iconmove-left 0.5s 1;
+}
+
+@-webkit-keyframes iconmove-left {
+  0%   { left: 50%; opacity: 1; }
+  50%  { left: -10%; opacity: 0; }  
+  51%  { left: 110%; opacity: 0; }
+  100% { left: 50%; opacity: 1; }
+}
+@-moz-keyframes iconmove-left {
+  0%   { left: 50%; opacity: 1; }
+  50%  { left: -10%; opacity: 0; }  
+  51%  { left: 110%; opacity: 0; }
+  100% { left: 50%; opacity: 1; }
+}
+@keyframes iconmove-left {
+  0%   { left: 50%; opacity: 1; }
+  50%  { left: -10%; opacity: 0; }  
+  51%  { left: 110%; opacity: 0; }
+  100% { left: 50%; opacity: 1; }
+}

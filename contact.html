@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<title>Lawn Services - Responsive HTML5 Template</title>
+	<meta name="keywords" content="HTML5 Template" />
+	<meta name="description" content="Lawn Services - Responsive HTML5 Template from Etheme">
+	<meta name="author" content="tonytemplates.com">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Icon Fonts  -->
+	<link rel="stylesheet" href="font/style.css">
+	<!-- Vendor CSS -->
+	<link rel="stylesheet" href="vendor/waves/waves.css">
+	<link rel="stylesheet" href="vendor/slick/slick.css">
+	<link rel="stylesheet" href="vendor/slick/slick-theme.css">
+	<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Custom Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="vendor/rs-plugin/css/settings.css" media="screen" />
+	<!-- Head Libs -->
+	<!--[if IE]>
+        <link rel="stylesheet" href="css/ie.css">
+        <![endif]-->
+	<!--[if lte IE 8]>
+        <script src="vendor/respond/respond.js"></script>
+        <script src="vendor/excanvas/excanvas.js"></script>
+        <![endif]-->
+	<!-- Modernizr -->
+	<script src="vendor/modernizr/modernizr.js"></script>
+	<!-- Google map -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript">
+		// When the window has finished loading create our google map below
+		google.maps.event.addDomListener(window, 'load', init);
+
+		function init() {
+			// Basic options for a simple Google Map
+			// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+			var mapOptions = {
+				// How zoomed in you want the map to start at (always required)
+				zoom: 14
+				, scrollwheel: false
+				, // The latitude and longitude to center the map (always required)
+				center: new google.maps.LatLng(55.8610112, -4.2547319), // Glasgow
+				// How you would like to style the map. 
+				// This is where you would paste any style found on Snazzy Maps.
+				styles: [{
+					"featureType": "water"
+					, "elementType": "geometry"
+					, "stylers": [{
+						"color": "#e9e9e9"
+					}, {
+						"lightness": 17
+					}]
+				}, {
+					"featureType": "landscape"
+					, "elementType": "geometry"
+					, "stylers": [{
+						"color": "#f5f5f5"
+					}, {
+						"lightness": 20
+					}]
+				}, {
+					"featureType": "road.highway"
+					, "elementType": "geometry.fill"
+					, "stylers": [{
+						"color": "#ffffff"
+					}, {
+						"lightness": 17
+					}]
+				}, {
+					"featureType": "road.highway"
+					, "elementType": "geometry.stroke"
+					, "stylers": [{
+						"color": "#ffffff"
+					}, {
+						"lightness": 29
+					}, {
+						"weight": 0.2
+					}]
+				}, {
+					"featureType": "road.arterial"
+					, "elementType": "geometry"
+					, "stylers": [{
+						"color": "#ffffff"
+					}, {
+						"lightness": 18
+					}]
+				}, {
+					"featureType": "road.local"
+					, "elementType": "geometry"
+					, "stylers": [{
+						"color": "#ffffff"
+					}, {
+						"lightness": 16
+					}]
+				}, {
+					"featureType": "poi"
+					, "elementType": "geometry"
+					, "stylers": [{
+						"color": "#f5f5f5"
+					}, {
+						"lightness": 21
+					}]
+				}, {
+					"featureType": "poi.park"
+					, "elementType": "geometry"
+					, "stylers": [{
+						"color": "#dedede"
+					}, {
+						"lightness": 21
+					}]
+				}, {
+					"elementType": "labels.text.stroke"
+					, "stylers": [{
+						"visibility": "on"
+					}, {
+						"color": "#ffffff"
+					}, {
+						"lightness": 16
+					}]
+				}, {
+					"elementType": "labels.text.fill"
+					, "stylers": [{
+						"saturation": 36
+					}, {
+						"color": "#333333"
+					}, {
+						"lightness": 40
+					}]
+				}, {
+					"elementType": "labels.icon"
+					, "stylers": [{
+						"visibility": "off"
+					}]
+				}, {
+					"featureType": "transit"
+					, "elementType": "geometry"
+					, "stylers": [{
+						"color": "#f2f2f2"
+					}, {
+						"lightness": 19
+					}]
+				}, {
+					"featureType": "administrative"
+					, "elementType": "geometry.fill"
+					, "stylers": [{
+						"color": "#fefefe"
+					}, {
+						"lightness": 20
+					}]
+				}, {
+					"featureType": "administrative"
+					, "elementType": "geometry.stroke"
+					, "stylers": [{
+						"color": "#fefefe"
+					}, {
+						"lightness": 17
+					}, {
+						"weight": 1.2
+					}]
+				}]
+			};
+			// Get the HTML DOM element that will contain your map 
+			// We are using a div with id="map" seen below in the <body>
+			var mapElement = document.getElementById('map');
+			// Create the Google Map using our element and options defined above
+			var map = new google.maps.Map(mapElement, mapOptions);
+			var image = 'images/map-marker.png';
+			// Let's also add a marker while we're at it
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(55.8610112, -4.2547319)
+				, map: map
+				, icon: image
+			});
+		}
+	</script>
+</head>
+
+<body>
+	<div id="loader-wrapper" class="loader-on">
+		<div id="loader">
+			<div class="spinner"> <span class="ball-1"></span> <span class="ball-2"></span> <span class="ball-3"></span> <span class="ball-4"></span> </div>
+		</div>
+	</div>
+	<!-- Modal Search -->
+	<div class="overlay overlay-scale">
+		<button type="button" class="overlay-close"> ✕ </button>
+		<div class="overlay__content">
+			<form id="search-form" class="search-form outer" action="#" method="post">
+				<div class="input-group input-group--wd">
+					<input type="text" class=" input--full" placeholder="search text here ..."> </div>
+				<button class="btn btn--wd text-uppercase wave waves-effect">Search</button>
+			</form>
+		</div>
+	</div>
+	<!-- / end Modal Search -->
+	<div class="wrapper">
+		<!-- Header section -->
+		<header class="header header--max header--sticky">
+			<nav class="navbar navbar-wd" id="navbar">
+				<div class="navbar-header">
+					<div class="container">
+						<button type="button" class="navbar-toggle" id="slide-nav"><i class="icon icon-menu"></i></button>
+						<div class="row">
+							<div class="col-sm-3 col-lg-3">
+								<!--  Logo  -->
+								<a class="logo" href="index.html"> <img class="logo-default" src="images/logo.png" alt="" /> <img class="logo-mobile" src="images/logo.png" alt="" /> </a>
+								<!-- End Logo -->
+							</div>
+							<div class="visible-lg col-lg-3">
+								<div class="slogan"> Quality work you Can Trust! </div>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<div class="phone">
+									<div><span class="custom-color hidden-xs">CALL US: </span> <span class="phone-number">+1 800 543 2100</span><i class="icon icon-telephone"></i></div>
+									<div class="phone-sm hidden-xs">7 Days a week from 9:00 am to 7:00 pm</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-lg-2">
+								<div class="social-links">
+									<ul>
+										<li>
+											<a class="icon icon-twitter-logo-button" href="#"></a>
+										</li>
+										<li>
+											<a class="icon icon-facebook-logo-button" href="#"></a>
+										</li>
+										<li>
+											<a class="icon icon-instagram-logo" href="#"></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="header__search"> <a href="#" class="search-open"><span class="icon icon-magnifying-glass"></span></a> </div>
+					</div>
+				</div>
+				<div id="slidemenu">
+					<div class="slidemenu-close visible-xs">✕</div>
+					<div class="container">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html"><span class="link-name">Home</span></a></li>
+							<li><a href="about.html"><span class="link-name">About</span></a></li>
+							<li><a href="services.html" class="dropdown-toggle"><span class="link-name">Services</span><span class="caret icon-angle-down"></span></a>
+								<ul class="dropdown-menu animated fadeIn" role="menu">
+									<li><a href="#">lawn service</a>
+										<ul class="submenu">
+											<li class="level2"><a href="service-page.html">trimming edge</a></li>
+											<li class="level2"><a href="service-page.html">clean up</a></li>
+											<li class="level2"><a href="service-page.html">blowing</a></li>
+											<li class="level2"><a href="service-page.html">weeding</a></li>
+											<li class="level2"><a href="service-page.html">moving</a></li>
+										</ul>
+									</li>
+									<li><a href="service-page.html">tree service</a></li>
+									<li><a href="service-page.html">landscape design services</a></li>
+									<li><a href="service-page.html">leaf removal</a></li>
+									<li><a href="service-page.html">Snow Removal</a></li>
+									<li><a href="service-page.html">Junk Removal</a></li>
+									<li><a href="service-page.html">New tree planting</a></li>
+									<li><a href="service-page.html">Sod service</a></li>
+									<li><a href="service-page.html">Retaining walls</a></li>
+									<li><a href="service-page.html">Patio and fire pit pavers</a></li>
+									<li><a href="service-page.html">Yard work</a></li>
+									<li><a href="service-page.html">Excavation</a></li>
+								</ul>
+							</li>
+							<li><a href="pricing.html"><span class="link-name">Pricing</span></a></li>
+							<li><a href="blog.html" class="dropdown-toggle"><span class="link-name">Blog</span><span class="caret icon-angle-down"></span></a>
+								<ul class="dropdown-menu animated fadeIn" role="menu">
+									<li><a href="blog.html">Blog Classic</a></li>
+									<li><a href="blog-card.html">Blog Post Card</a></li>
+									<li><a href="blog-single.html">Blog Single post</a></li>
+								</ul>
+							</li>
+							<li><a href="gallery.html"><span class="link-name">Gallery</span></a></li>
+							<li><a href="maintenance.html"><span class="link-name">Maintenance tips</span></a></li>
+							<li class="active"><a href="contact.html"><span class="link-name">Contacts</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- End Header section -->
+		<div id="pageContent" class="page-content">
+			<!-- Breadcrumb section -->
+			<section class="breadcrumbs">
+				<div class="container">
+					<ol class="breadcrumb breadcrumb--wd pull-left">
+						<li><a href="index.html">Home</a></li>
+						<li class="active">Maintenance Tips</li>
+					</ol>
+				</div>
+			</section>
+			<!-- Content section -->
+			<section class="content content--fill content--fill--light top-null bottom-null fullwidth">
+				<h2 class="text-center lined">Contact Us</h2>
+				<div id="map"></div>
+			</section>
+			<section class="content content--fill content--fill--light top-null">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-1 visible-lg"></div>
+						<div class="col-sm-3">
+							<div class="address">
+								<div class="pull-right"><img src="images/logo.png" class="img-responsive" alt="" /></div>
+								<div class="divider divider--sm"></div>
+								<div class="text-right">
+									<h6>Our address:</h6> Envato Level 13, 2 Elizabeth
+									<br> St, Melbourne, Victoria 3000
+									<br> Australia </div>
+								<div class="divider divider--sm"></div>
+								<div class="text-right">
+									<h6>Call us:</h6> +1-234-567-890 </div>
+								<div class="divider divider--sm"></div>
+								<div class="text-right">
+									<h6>Have any questions?</h6> <a href="mailto:info@mydomain.com">noreply@envato.com</a>
+									<br> <a href="http://www.envato.com">www.envato.com</a> </div>
+								<div class="divider divider--md"></div>
+								<div class="social-links lg">
+									<ul>
+										<li>
+											<a class="icon icon-twitter-logo-button" href="#"></a>
+										</li>
+										<li>
+											<a class="icon icon-facebook-logo-button" href="#"></a>
+										</li>
+										<li>
+											<a class="icon icon-instagram-logo" href="#"></a>
+										</li>
+									</ul>
+									<ul>
+										<li>
+											<a class="icon icon-google-plus" href="#"></a>
+										</li>
+										<li>
+											<a class="icon icon-social" href="#"></a>
+										</li>
+										<li>
+											<a class="icon icon-linkedin-logo-button" href="#"></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-1 visible-lg"></div>
+						<div class="col-sm-7">
+							<form id="contactform" class="contact-form" name="contactform" method="post" novalidate>
+								<div id="success">
+									<p>Your message was sent successfully!</p>
+								</div>
+								<div id="error">
+									<p>Something went wrong, try refreshing and submitting the form again.</p>
+								</div>
+								<div class="inputs-col">
+									<div class="input-wrapper">
+										<label>Name <span class="required">*</span></label>
+										<input type="text" class="input--wd input--full" name="name" placeholder="Your name"> </div>
+									<div class="input-wrapper">
+										<label>Phone</label>
+										<input type="text" class="input--wd input--full" name="phone" placeholder="(555) 555-5555"> </div>
+									<div class="input-wrapper">
+										<label>Email</label>
+										<input type="text" class="input--wd input--full" name="email" placeholder="xxxx@xxxx.xxx"> </div>
+								</div>
+								<div>
+									<label>Message</label>
+									<textarea class="textarea--wd input--full" name="message"></textarea>
+								</div>
+								<div class="divider divider--xs"></div>
+								<button type="submit" id="submit" class="btn btn--wd">Send Message</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page-bot"><img src="images/under-footer.png" class="img-responsive" alt=""></div>
+			<!-- End Content section -->
+		</div>
+		<footer class="footer">
+			<div class="footer__column-links">
+				<div class="back-to-top"><a href="#top"><span class="icon-tree"></span></a></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-md-3"> <img src="images/guarantee.png" class="img-responsive" alt="" /> </div>
+						<div class="col-sm-6 col-md-3 mobile-collapse">
+							<h5 class="title mobile-collapse__title">Information </h5>
+							<div class="v-links-list mobile-collapse__content">
+								<ul>
+									<li><a href="maintenance.html">FAQ</a></li>
+									<li><a href="contact.html">Locations</a></li>
+									<li><a href="about.html">Testimonials</a></li>
+									<li><a href="about.html">Careers</a></li>
+									<li><a href="about.html">Partners</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 mobile-collapse">
+							<h5 class="title mobile-collapse__title">Service</h5>
+							<div class="v-links-list mobile-collapse__content">
+								<ul>
+									<li><a href="sitemap.html">Site Map</a></li>
+									<li><a href="about.html">Privacy</a></li>
+									<li><a href="about.html">Terms of Use</a></li>
+									<li><a href="contact.html">Contact Us</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 mobile-collapse mobile-collapse--last">
+							<h5 class="title mobile-collapse__title">Company Info</h5>
+							<div class="v-links-list mobile-collapse__content">
+								<ul>
+									<li>51 St. Black Road Raleigh</li>
+									<li><a href="mailto:lawncare@websitename.org">lawncare@websitename.org</a></li>
+									<li>Mon - Sun, 24/7</li>
+									<li>+1 800 543 2100</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="pull-right col-sm-6 col-md-3 col-lg-3">
+						<div class="social-links">
+							<ul>
+								<li>
+									<a class="icon icon-twitter-logo-button" href="#"></a>
+								</li>
+								<li>
+									<a class="icon icon-facebook-logo-button" href="#"></a>
+								</li>
+								<li>
+									<a class="icon icon-instagram-logo" href="#"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="pull-right col-sm-6 col-md-5 col-lg-4">
+						<div class="phone">
+							<div><span class="custom-color hidden-xs">CALL US: </span> <span class="phone-number">+1 800 543 2100</span><i class="icon icon-telephone"></i></div>
+							<div class="phone-sm">7 Days a week from 9:00 am to 7:00 pm</div>
+						</div>
+					</div>
+					<div class="pull-left col-sm-12 col-md-3 col-lg-4">
+						<div class="copyright">© 2016 <a href="#">Lawn Care Service</a>.</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- Vendor -->
+	<!-- jQuery 1.10.1-->
+	<script src="vendor/jquery/jquery.js"></script>
+	<!-- Bootstrap 3-->
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<!-- Specific Page Vendor -->
+	<script src="vendor/waves/waves.min.js"></script>
+	<script src="vendor/slick/slick.min.js"></script>
+	<script src="vendor/parallax/jquery.parallax-1.1.3.js"></script>
+	<script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+	<script src="vendor/waypoints/sticky.min.js"></script>
+	<script src="vendor/doubletaptogo/doubletaptogo.js"></script>
+	<script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+	<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+	<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<!-- jQuery form validation -->
+	<script src="vendor/form/jquery.form.js"></script>
+	<script src="vendor/form/jquery.validate.min.js"></script>
+	<!-- Custom -->
+	<script src="js/custom.js"></script>
+</body>
+
+</html>

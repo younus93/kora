@@ -1,0 +1,45 @@
+.breadcrumbs {
+	background-color: @breadcrumb-bg;
+	margin-bottom: 0;
+	&--boxed, body.boxed & {
+	   .container;
+	   background-color: transparent;
+	   padding-left: 0;
+	   padding-right: 0;
+	   & .container {
+			background-color: @breadcrumb-bg;
+	   }
+	}
+	&--full, body.fullwidth &  {
+	   .container-fluid;
+	   padding-left: 0;
+	   padding-right: 0;
+	   .container {
+			width: auto;
+	   	   .container-fluid;
+	   }
+	}
+	.breadcrumb.breadcrumb--wd {
+	  display: inline-block;
+	  padding: 20px 0;
+	  border-radius: 0;
+	  margin: 0;
+	  text-transform: uppercase;
+		a {
+			color: @breadcrumb-color;
+			text-transform: uppercase;
+		}
+		> li {
+		display: inline-block;
+		+ li:before {
+		  content: "\00BB";
+		  padding: 0 15px;
+		  color: @breadcrumb-color;
+		}
+	  }
+	  > .active {
+		color: @breadcrumb-active-color;
+	  }
+	}
+}
+

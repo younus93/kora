@@ -1,0 +1,86 @@
+.panel-group {
+	margin-top: 35px;
+	margin-bottom: 50px;
+	@media screen and (max-width: @screen-sm-max) {
+		margin-top: 15px;
+		margin-bottom: 30px;
+	}
+}
+.faq-item {
+	font-family: @custom-font;
+	.panel {
+		margin-bottom: 40px;
+		background: transparent;
+		.box-shadow(none);
+	}
+	.panel-heading {
+		position: relative;
+		min-height: 57px;
+		padding: 0;
+		background: transparent;
+	}
+	.panel-heading .panel-title {
+		text-align: left !important;
+	}
+	.panel-heading .panel-title > a {
+		display: block;
+		position: relative;
+		padding: 14px 0 14px 80px;
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: 300;
+		text-transform: none;
+		color: @body-font-color;
+		font-weight: 700;
+		.transition (color 0.3s ease);
+		&:hover {
+			color: @custom-color;
+		}
+	}
+	.panel-heading a, .panel-heading a:hover {
+		text-decoration: none;
+		.transition (all 0.25 ease);
+	}
+	.panel-heading a > span.caret-toggle {
+		.btn--round;
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 65px;
+		height: 65px;
+		font-size: 30px;
+		text-align: center;
+		border-radius: 50%;
+	}
+	.panel-heading a > span.caret-toggle > i {
+		display: block;
+		position: relative;
+		font-style: normal;
+		font-weight: bold;
+		.vertical-align;
+		top: 50%;
+		padding: 0;
+	}
+	.panel-heading a:not(.collapsed) > span.opened {
+		display: none;
+	}	
+	.panel-heading a > span.closed {
+	}
+	.panel-heading a.collapsed > span.closed {
+		display: none;
+	}
+	.panel-collapse {
+		margin-top: 10px;
+		background: transparent;
+	}
+	.panel-body {
+		color: @color-light;
+		border: 0;
+		padding: 0 0 0 80px;
+	}
+	.panel-heading+.panel-collapse>.panel-body {
+		border: 0;
+	}
+}

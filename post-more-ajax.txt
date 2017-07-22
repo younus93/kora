@@ -1,0 +1,42 @@
+							<div class="blog-post">
+								<div class="post-image">
+									<a href="blog-single.html"><img src="images/blog/blog-post-img-1.jpg" alt=""></a>
+								</div>
+								<div class="post-content">
+									<h3 class="post-title"><a href="#">Getting Ready for Spring: Slit Seeding Your Yard</a></h3>
+									<div class="post-date"><span class="day">10</span><span class="month">April</span></div>
+									<div class="post-author">Richard M. Pinckney</div>
+									<div class="post-teaser">
+										<p>In Pennsylvania, early fall is the best time to sow grass seeds for a number of reasons. Seeding in the fall allows cool-season grasses to establish before winter. Try to sow two months before the first frost of the season. There are fewer active lawn...</p>
+									</div>
+									<div class="post-meta"><i class="icon icon-speech"></i><span>3</span></div>
+								</div>
+							</div>
+             <div class="blog-post">
+								<div class="post-image">
+									<a href="blog-single.html"><img src="images/blog/blog-post-img-2-1.jpg" alt=""></a>
+								</div>
+								<div class="post-content">
+									<h3 class="post-title"><a href="#">Getting Ready for Spring: Slit Seeding Your Yard</a></h3>
+									<div class="post-date"><span class="day">10</span><span class="month">April</span></div>
+									<div class="post-author">Richard M. Pinckney</div>
+									<div class="post-teaser">
+										<p>In Pennsylvania, early fall is the best time to sow grass seeds for a number of reasons. Seeding in the fall allows cool-season grasses to establish before winter. Try to sow two months before the first frost of the season. There are fewer active lawn...</p>
+									</div>
+									<div class="post-meta"><i class="icon icon-speech"></i><span>3</span></div>
+								</div>
+							</div>
+              <div class="blog-post">
+								<div class="post-image">
+									<a href="blog-single.html"><img src="images/blog/blog-post-img-2-2.jpg" alt=""></a>
+								</div>
+								<div class="post-content">
+									<h3 class="post-title"><a href="#">Getting Ready for Spring: Slit Seeding Your Yard</a></h3>
+									<div class="post-date"><span class="day">10</span><span class="month">April</span></div>
+									<div class="post-author">Richard M. Pinckney</div>
+									<div class="post-teaser">
+										<p>In Pennsylvania, early fall is the best time to sow grass seeds for a number of reasons. Seeding in the fall allows cool-season grasses to establish before winter. Try to sow two months before the first frost of the season. There are fewer active lawn...</p>
+									</div>
+									<div class="post-meta"><i class="icon icon-speech"></i><span>3</span></div>
+								</div>
+							</div>

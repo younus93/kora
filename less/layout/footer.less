@@ -1,0 +1,244 @@
+.footer {
+	position: relative;
+	background-color: @footer-bg;
+	color: @footer-color;
+	.logo--footer {
+		float: none;
+		margin-bottom: 15px;
+		display: block;
+		img {
+			max-width: 100%;
+		}
+	}
+	.estimate-form .btn {
+		margin-top: 5px;
+	}
+	&__top {
+		background: url(../images/bg-estimate.jpg) 0 bottom repeat-x #f0f0f0;
+		padding-top: 45px;
+		min-height: 310px;
+		.select-wrapper, input {
+			margin: 5px 0 15px;
+		}
+		@media (max-width: @screen-sm-max) {
+			text-align: center;
+			padding-bottom: 125px;
+		}
+		.title {
+			font-size: 36px;
+			line-height: 36px;
+			font-weight: 700;
+			padding-top: 38px;
+			text-transform: none;
+			@media (max-width: @screen-sm-max) {
+				margin-bottom: 15px;
+			}
+		}
+	}
+	&__column-links {
+		position: relative;
+		background: @footer-column-links-bg;
+		background-attachment: fixed; 
+		color: @footer-column-links-color;
+		padding: 55px 0 40px;
+		a:not(.btn) {
+			color: @footer-column-links-color;
+			.transition (color 0.3s ease);
+			&:hover {
+				color: @custom-color;
+			}
+		}
+		.v-links-list li {
+			color: @footer-column-links-color;
+			&.icon:before {
+				color: @footer-column-links-icon-color;
+			}
+		}
+		.title {
+			font-size: 18px;
+			font-weight: 700;
+			font-family: @logo-font;
+			color: @footer-column-links-title-color;
+				position: relative;
+				padding-bottom: 36px;
+				&:after {
+					content: '';
+					display: block;
+					margin: 25px 0 0;
+					width: 40px;
+					height: 1px;
+					background-color: @custom-color;
+				}
+		}
+		p {
+			font-size: 1.067em;
+		}
+	}
+
+	&__bottom {
+		position: relative;
+		background-color: @footer-bottom-bg;
+		color: @footer-bottom-color;	
+		padding: 20px 0 55px;
+		font-size: 0.933em;
+		font-weight: 300;
+		line-height: 1.5em;
+		a {
+			color: @footer-bottom-color;
+			&:hover {
+				color: @custom-color;
+			}
+		}
+		& .container > div {
+			@media (max-width: @screen-xs-max) {
+				width: 100%;
+				float: none !important;
+				text-align: center;
+				margin-bottom: 6px;
+			}
+		}
+		.social-links {
+			text-align: right;
+			margin-top: -10px;
+		}
+		.social-links ul li a:hover {
+			color: #ffffff;
+		}
+		.phone {
+			font-size: 18px;
+			line-height: 26px;
+			text-align: right;
+			font-weight: 500;
+			color: #ffffff;
+			.phone-number {
+				font-size: 26px;
+				padding: 0 14px;
+			}
+			.phone-sm {
+				font-size: 11px;
+				line-height: 15px;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+		}
+		.copyright { 
+			font-size: 16px;
+			color: #e1e1e1;
+			padding-top: 25px;
+			text-align:  left;
+		}
+		@media (max-width: @screen-sm-max) {
+			.copyright { 
+				text-align:  center;
+				padding-top: 0;
+			}
+			.pull-left, .pull-right {
+				float: none !important;
+				width: 100%;
+				text-align: center;
+			}
+			.social-links {
+				margin-top: 0;
+			}
+			.phone, .social-links {
+				text-align: center;
+				padding-bottom: 25px;
+			}
+		}
+	}
+}
+.back-to-top {
+	position: absolute;
+	bottom: 100px;
+	right: 10%;
+	a {
+		display: block;	
+		background-color: @custom-color;
+		width: 59px;
+		height: 59px;
+		line-height: 60px;
+		text-align: center;
+		color: #3d3d3d !important;
+		font-size: 42px;
+		text-decoration: none;
+	}
+	.transition (all, 300ms, ease-out, 0s);
+	&:hover {
+		span {		
+			position:absolute;
+			bottom: 26px;
+			left: 0;
+			right: 0;
+			-webkit-animation: scroll-ani-to-top 800ms linear infinite;
+			-moz-animation: scroll-ani-to-top 800ms linear infinite;
+			animation: scroll-ani-to-top 800ms linear infinite;
+		}
+	}
+}		
+
+@media (max-width: @screen-md-max) {
+	.back-to-top {
+		position: absolute;
+		bottom: 20px;
+		right: 10px;
+	}
+}
+@media (max-width: @screen-xs-max) {
+	.footer__column-links {
+		position: static;
+		padding: 30px 0 0;
+		img {
+			margin: 0 auto 20px;
+		}
+	}
+	.footer__bottom {
+		padding-bottom: 130px;
+	}
+	.back-to-top {
+		bottom: 40px;
+		right: 50%;
+		z-index: 1;
+		margin-right: -30px;
+	}
+	.footer__column-links .title {
+		padding-bottom: 15px;
+		&:after {
+			display: none;
+		}		
+	}
+	.mobile-collapse {
+		width: 100%;
+		border: 0;
+		&__content {
+			display: none;
+			padding-bottom: 15px;
+			.open > & {
+				display: block;
+			}
+		}
+		.v-links-list ul {
+			padding: 10px 0 10px 10px;
+		}
+		&__title {
+			cursor: pointer;
+			padding: 16px 10px;
+			margin-top: 0 !important;
+			position: relative;
+			&:before {
+				position: absolute;
+				display: block;
+				top: 12px;
+				right: 10px;
+				font-family: 'lawn';
+				font-size: 28px;
+				content: "\e90c";
+				line-height: 1em;
+				color: @custom-color;
+				.open > & {
+					content: "\e90d";
+          right: 8.5px;
+				}
+			}
+		}
+	}
+}

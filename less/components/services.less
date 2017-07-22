@@ -1,0 +1,119 @@
+.services-block {
+	margin-bottom: 75px;
+	@media (max-width: @screen-sm-max) {
+		margin-bottom: 50px;
+	}
+	.service {
+		position: relative;
+		display: inline-block;
+		width: 33.333%;
+		margin: 0 -4px 0 0;
+		overflow: hidden;
+		vertical-align: top;
+		color: #838383;
+	}
+	.caption {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		padding: 0 25px;
+		text-align: center;
+		pointer-events: none;
+	}
+	.service-image img {
+		width: 100%;
+	}
+	.service-icon {
+		font-size: 90px;
+		line-height: 90px;
+		height: 90px;
+		width: 100%;
+		position: relative;
+		@media (max-width: @screen-md-max) {
+			font-size: 70px;
+			line-height: 70px;
+			height: 70px;			
+		}
+		.first {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin: 0 0 0 -45px;
+			@media (max-width: @screen-md-max) {
+				margin: 0 0 0 -35px;
+			}
+		}
+	}
+	.service.hovered {
+		.service-icon {
+			.first {
+				left: 50%;
+				-webkit-animation: iconmove 0.75s 1; 
+				-moz-animation:    iconmove 0.75s 1;
+				animation:         iconmove 0.75s 1;
+			}
+
+		}
+	}
+	.service-title {
+		font-size: 26px;
+		line-height: 30px;
+		font-weight: 700;
+		color: #000000;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.service.dark {
+		.service-icon {
+			color: #000000;
+		}
+	}	
+	.service.light {
+		color: #ffffff;
+		.service-title {
+			color: #ffffff;
+		}
+	}
+	.service.color {
+		color: @custom-color;
+		.service-title {
+			color: @custom-color;
+		}
+	}
+}
+@media (min-width: @screen-sm-min) {
+	.services-block {
+		margin-top: -150px;
+		position: relative;
+		z-index: 100;
+	}
+}
+@media (max-width: @screen-xs-max) {
+	.services-block {
+		margin-top: -50px;
+		margin-bottom: 80px;
+	}
+	.services-block .slick-dots {
+		bottom: -50px;
+	}
+}
+@-webkit-keyframes iconmove {
+  0%   { left: 50%; opacity: 1; }
+  50%  { left: 110%; opacity: 0; }  
+  51%  { left: -10%; opacity: 0; }
+  100% { left: 50%; opacity: 1; }
+}
+@-moz-keyframes iconmove {
+  0%   { left: 50%; opacity: 1; }
+  50%  { left: 110%; opacity: 0; }  
+  51%  { left: -10%; opacity: 0; }
+  100% { left: 50%; opacity: 1; }
+}
+@keyframes iconmove {
+  0%   { left: 50%; opacity: 1; }
+  50%  { left: 110%; opacity: 0; }  
+  51%  { left: -10%; opacity: 0; }
+  100% { left: 50%; opacity: 1; }
+}
