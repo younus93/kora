@@ -31,7 +31,7 @@
 		3.3.22 Faq
 		3.3.23 Blog
 4. Animation
-5. Plugins Custom Styles 
+5. Plugins Custom Styles
 
 ---------------------------------------*/
 /*-------------------------------------*/
@@ -5733,7 +5733,7 @@ body.fullwidth .breadcrumbs .container:after {
 .header--max #slidemenu.stuck .nav .open > a:focus,
 .header--max #slidemenu.stuck .nav .open > a:hover,
 .header--max #slidemenu.stuck .nav .active > a {
-  color: #000000;
+  color: #eeeeee;
 }
 @media (min-width: 768px) {
   .header--max .logo {
